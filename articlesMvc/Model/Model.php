@@ -5,7 +5,6 @@ namespace Model;
 class Model
 {
 	private const STORAGEDIR = './storage/';
-	private const DATEFORMAT = 'Y-m-d H:i:s';
 
 	public function getArticles() : array
 	{	
@@ -54,7 +53,7 @@ class Model
 			$lastArticleId = (int) $this->getLastArticleId();
 			$article['id'] = ++$lastArticleId;
 		} 
-		$article['date'] = date(self::DATEFORMAT);
+
 		$file_name = self::STORAGEDIR . $article['id'] . '.txt';
 		file_put_contents($file_name, json_encode($article)); 
 
