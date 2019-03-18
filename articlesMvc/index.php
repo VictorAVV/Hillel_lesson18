@@ -1,10 +1,7 @@
 <?php
 
-require 'Model.php';
-require 'AbstractController.php';
-require 'CommonController.php';
-require 'BlogController.php';
-require 'RouteController.php';
+require 'config.php';
+require '.\app\Router.php';
 
 $page = filter_input(INPUT_GET, 'page');
-RouteController::getRoute($page);
+Router::getRoute($page);

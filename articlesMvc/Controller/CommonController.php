@@ -1,5 +1,9 @@
 <?php
 
+namespace Controller;
+
+use Model\Model;
+
 class CommonController extends AbstractController
 {
 	public function index()

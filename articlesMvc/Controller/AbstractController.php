@@ -1,5 +1,7 @@
 <?php
 
+namespace Controller;
+
 abstract class AbstractController
 {
 	protected function getModel($model)

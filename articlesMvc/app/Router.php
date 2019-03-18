@@ -1,6 +1,9 @@
 <?php
 
-class RouteController
+use Controller\CommonController;
+use Controller\BlogController;
+
+class Router
 {
     public static function getRoute($page)
     {
